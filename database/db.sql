@@ -23,11 +23,11 @@ CREATE TABLE links (
     title VARCHAR(150) NOT NULL,
     url VARCHAR(255) NOT NULL,
     description TEXT,
-    userd_id INT(11),
+    user_id INT(11),
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     
     PRIMARY KEY(id),
-    CONSTRAINT fk_user FOREIGN KEY(userd_id) REFERENCES users(id)
+    CONSTRAINT fk_user FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
 ALTER TABLE links

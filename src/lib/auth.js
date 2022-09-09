@@ -1,5 +1,4 @@
 module.exports = {
-
     isLoggedIn(req, res, next) {
         if(req.isAuthenticated()) {
             return next();
@@ -13,5 +12,4 @@ module.exports = {
         }
         return res.redirect('/profile');
     }
-
 };
